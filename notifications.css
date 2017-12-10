@@ -1,0 +1,72 @@
+ @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+ .notificationPane {
+   max-width: 100vh;
+   width: 400px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+   top: 16px;
+ }
+
+ .notification {
+   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+   display: inline-block;
+   max-width: 100vh;
+   width: 400px;
+   margin: auto;
+   margin-bottom: 16px;
+   border-radius: 2px;
+   padding: 16px;
+   font-family: 'Fira Sans', sans-serif;
+   position: relative;
+   top: -100%;
+   visibility: hidden;
+   -webkit-animation: slide 0.5s forwards;
+   animation: slide 0.5s forwards;
+   background-color: white;
+ }
+
+ @-webkit-keyframes slide {
+   80% {
+     top: 0;
+     visibility: visible;
+   }
+   90% {
+     top: -1px;
+     visibility: visible;
+   }
+   100% {
+     top: 0;
+     visibility: visible;
+   }
+ }
+
+ @keyframes slide {
+   80% {
+     top: 0;
+     visibility: visible;
+   }
+   90% {
+     top: -1px;
+     visibility: visible;
+   }
+   100% {
+     top: 0;
+     visibility: visible;
+   }
+ }
+
+ .notification-title {
+   margin: 0;
+   color: #444;
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ .notification-desc {
+   margin: 0;
+   font-size: 14px;
+   color: #999;
+   font-weight: lighter;
+ }
