@@ -1,7 +1,6 @@
  @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
  .notificationPane {
-   max-width: 100vh;
-   width: 400px;
+   width: 100vh;
    position: absolute;
    left: 0;
    right: 0;
@@ -10,14 +9,12 @@
  }
 
  .notification {
-   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
    display: inline-block;
-   max-width: 100vh;
-   width: 400px;
    margin: auto;
-   margin-bottom: 16px;
-   border-radius: 2px;
-   padding: 16px;
+   /*margin-bottom: 16px;*/
+   border-radius: 4px;
+   padding: 0;
    font-family: 'Fira Sans', sans-serif;
    position: relative;
    top: -100%;
@@ -25,6 +22,12 @@
    -webkit-animation: slide 0.5s forwards;
    animation: slide 0.5s forwards;
    background-color: white;
+   width: 34em;
+   min-height: 64px;
+   margin: 5px;
+   color: rgba(#574f4a, 0.87);
+   background-color: $base_color;
+   border: none;
  }
 
  @-webkit-keyframes slide {
@@ -59,14 +62,19 @@
 
  .notification-title {
    margin: 0;
-   color: #444;
+   padding: 8px 16px 0px 16px;
+   color: #574f4a;
+   opacity: 0.87;
    font-size: 16px;
    font-weight: bold;
+   spacing: 5px;
  }
 
  .notification-desc {
    margin: 0;
-   font-size: 14px;
-   color: #999;
+   padding: 8px 16px 8px 16px;
+   font-size: 16px;
+   color: #574f4a;
+   opacity: 0.696;
    font-weight: lighter;
  }
