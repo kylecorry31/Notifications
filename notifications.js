@@ -11,8 +11,9 @@ var NotificationManager = {
     }
     var notification = document.createElement('div');
     notification.classList.add('notification');
+    var context = this;
     notification.addEventListener("click", function(){
-     this._notificationPane.removeChild(notification);
+     context._notificationPane.removeChild(notification);
    });
     notification.innerHTML = '<h1 class="notification-title">'+ title + '</h1><p class="notification-desc">' + desc + '</p>';
     if(delay){
