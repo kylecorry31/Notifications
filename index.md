@@ -22,4 +22,4 @@ To create a notification with a 2 second timeout and a 1 second delay, do the fo
 createNotification("Title", "Description", 2, 1);
 ```
 
-Here is a (quick demo)[demo.html].
+Here is a [quick demo](demo.html).
