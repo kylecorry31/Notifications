@@ -1,0 +1,48 @@
+@import 'variables';
+
+ .notificationPane {
+   width: $notification-banner-width;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+   top: $notification-banner-margin;
+ }
+
+ .notification {
+   box-shadow: $shadow-2;
+   display: inline-block;
+   margin: auto;
+   border-radius: $material-border-radius;
+   font-family: $font-stack;
+   font-size: $font-size;
+   position: relative;
+   top: -100vh;
+   visibility: hidden;
+   -webkit-animation: slide $animation-duration forwards;
+   animation: slide $animation-duration forwards;
+   background-color: $bg-color;
+   width: $notification-banner-width;
+   min-height: $notification-banner-height;
+   margin-top: $notification-banner-margin;
+   margin-bottom: $notification-banner-margin;
+   color: $fg-color;
+   border: none;
+ }
+
+ .notification-title {
+   margin: 0;
+   padding: $notification-padding-top $notification-padding-side 0px $notification-padding-side;
+   color: $fg-color;
+   font-size: $font-size;
+   font-weight: bold;
+   spacing: 5px;
+ }
+
+ .notification-desc {
+   margin: 0;
+   padding: $notification-padding-top $notification-padding-side $notification-padding-top $notification-padding-side;
+   font-size: $font-size;
+   color: rgba($fg-color, 0.8);
+   font-weight: lighter;
+ }

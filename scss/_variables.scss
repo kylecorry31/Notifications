@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+@import 'colors';
+
+// ANIMATIONS
+$animation-duration: 0.5s;
+@-webkit-keyframes slide {
+  80% {
+    top: 0;
+    visibility: visible;
+  }
+  90% {
+    top: -1px;
+    visibility: visible;
+  }
+  100% {
+    top: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes slide {
+  80% {
+    top: 0;
+    visibility: visible;
+  }
+  90% {
+    top: -1px;
+    visibility: visible;
+  }
+  100% {
+    top: 0;
+    visibility: visible;
+  }
+}
+
+// FONTS
+$font-stack: 'Fira Sans', sans-serif;
+$font-size: 16px;
+
+// NOTIFICATIONS
+$notification-banner-width: 34em;
+$notification-banner-margin: 5px;
+$notification-banner-height: 64px;
+$notification-padding-side: 16px;
+$notification-padding-top: 8px;
+
+
+// SHADOWS
+$shadow-2: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
+
+// MATERIAL
+$material-border-radius: 4px;
